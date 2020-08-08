@@ -1,12 +1,20 @@
 import React from 'react';
 
-import HomeContainer from './containers/HomeContainer'
+
+
+import Home from './components/core/Home'
+
+
 import {
   BrowserRouter as Router,
   Route,
   Switch
 } from 'react-router-dom';
 
+
+
+import Config from './Config';
+import Global from './Global';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
@@ -19,7 +27,13 @@ class App extends React.Component{
           <div>
           <Switch>
             <Route path="/">
-              <HomeContainer />
+              <Home />
+            </Route>
+            <Route path="/">
+              <Global />
+            </Route>
+            <Route path="/">
+              <Config />
             </Route>
           </Switch>
           </div>

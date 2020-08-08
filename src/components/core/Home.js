@@ -1,6 +1,15 @@
 import React from 'react';
 
-class HomeContainer extends React.Component {
+class Home extends React.Component {
+  constructor(props){
+    super(props)
+
+    this.state = {
+      cities : {}
+    }
+  }
+
+
   render() {
     return (
       <div
@@ -16,14 +25,23 @@ class HomeContainer extends React.Component {
               Je vérifie que les 2 mots : Voleur et <span style={{fontFamily: 'serif' }}>Voleur</span> ont une police d'écriture différente
             </p>
           </div>
+          <div>
+            Hello Home
+          </div>
           <div
             className='col-lg-8 col-md-4 col-12'>
             Une autre phrase
           </div>
         </div>
       </div>
+ 
+      
     );
   }
 }
 
-export default HomeContainer;
+export default Home;
+
+
+
+
