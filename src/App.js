@@ -3,7 +3,7 @@ import React from 'react';
 
 
 import Home from './components/core/Home'
-
+import Api from './utils/Api'
 
 import {
   BrowserRouter as Router,
